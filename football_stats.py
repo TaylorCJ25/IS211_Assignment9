@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 
+soup = BeautifulSoup('lxml')
 def football_data():
     source = requests.get('https://www.cbssports.com/nfl/stats/regular/').text
     soup = BeautifulSoup(source, 'lxml')
